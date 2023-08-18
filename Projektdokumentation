@@ -1,12 +1,11 @@
 # Projekt-Dokumentation
 
-☝️ Alle Text-Stellen, welche mit einem ✍️ beginnen, können Sie löschen, sobald Sie die entsprechende Stellen ausgefüllt haben.
 
-✍️ Ihr Gruppenname und Ihre Nachnamen
+Rebecca Willi
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
+| 18.08.2023| 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
@@ -22,8 +21,17 @@
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    |    Muss         | Funktional| Als User möchte ich, dass der Computer eine Zufallszahl als Geheimzahl speichert. |
+| 2    |    MUss         | Funktional| Als User möchte ich, dass ich die Zahlen erraten kann.|
+| 3    |    Muss         | Funktional| Als User möchte ich, dass das Programm Hinweise auf die Zahl gibt.|
+| 4    |    Muss         | Funktional| Als User möchte ich, dass ich am Ende des Spiels die Anzahl Rateversuche einsehen.|
+| 5    |    Muss         | Funktional| Als USer möchte ich, dass Fehleingaben abgefangen werden|
+| 6    |    Muss         | Funktional| Als User möchte ich, dass ich eine Highscoreliste einsehen kann.| 
+| 7    |    Muss         | Funktional| Als User möchte ich, dass ich einen Timer sehen kann.| 
+| 8    |    Kann         | Qualität  | Als User möchte ich, dass ich unterschiedliche Levels spielen kann.|
+
+
+
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
@@ -31,10 +39,17 @@
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+| 1.1  | Programm ist geöffnet | Programm starten|Errate die Zahl!|
+| 2.1  | Programm ist geöffnet | Programm starten|Eingabefeld erscheint|
+| 3.1  | Programm ist gestartet| 3| Die Zahl ist grösser/kleiner/richtig|
+| 3.2  | Programm ist gestartet| 100| Die Zahl ist kleiner/richtig|
+| 4.1  | Programm ist gestartet| Zahl erraten| Die Zahl ist richtig. Du hast xx Rateversuche gebraucht.|
+| 5.1  | Programm ist gestartet| jhgf| Dies ist keine gültige Eingabe, versuche es nocheinmal.|
+| 5.2  | Programm ist gestartet| 10075| Dies ist keine gültige Zahl für dieses Level, versuche es nocheinmal.|
+| 6.1  | Zahl ist erraten      | Highscoreliste öffnen| Highscore mit Datum wird angezeigt.|
+| 7.1  | Programm ist geöffnet| Programm starten| Timer beginnt zu zählen|
+| 7.2  | Programm ist gestartet| Zahl erraten| Timer stopt|
+| 8.1  | Programm ist gestartet| Level auswählen| Spiel beginnt|
 
 ### 1.4 Diagramme
 
@@ -44,14 +59,20 @@
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
-
-Total: 
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+| 1.A  |01.09.2023|Rebecca Willi| Generieren der Zufallszahl|45 min|
+| 2.A  |01.09.2023|Rebecca Willi| Eingabefeld um die Zahlen zu erraten erstellen| 45 min|
+| 3.A  |01.09.2023|Rebecca Willi| Ausgabe für Hinweis auf die Zahl wenn sie kleiner ist, erstellen.|45 min|
+| 3.B  |01.09.2023|Rebecca Willi| Ausgabe für Hinweis auf die Zahl wenn sie grösser ist, erstellen.|45min|
+| 3.C  |01.09.2023|Rebecca Willi| Auflösung beim erraten der richtigen Zahl.|45min|
+| 4.A  |08.09.2023|Rebecca Willi| Zähler erstellen, um die Anzahl versuche zu zählen.| 45min| 
+| 4.B  |08.09.2023|Rebecca Willi| Ausgabefeld für Anzahl Versuche erstellen.| 45min|
+| 5.A  |01.09.2023|Rebecca Willi| Fehleingaben abfangen|45min|
+| 6.A  |08.09.2023|Rebecca Willi| Highscoreliste erstellen| 45min|
+| 6.B  |08.09.2023|Rebecca Willi| Highscores speichern und mit Datum ausgeben|45min| 
+| 7.A  |08.09.2023|Rebecca Willi| Timer erstellen|45min|
+| 8.A  |08.09.2023|Rebecca Willi| Level zwischen 1 & 1000 und 1 & 50 erstellen|
+| 8.B  |08.09.2023|Rebecca Willi| EIngabe für Benutzer erstellen, bei welcher er die Zahlenspannweite selbst wählen kann.| 45min| 
+Total: 585min --> 9h 45min
 
 ## 3 Entscheiden
 
