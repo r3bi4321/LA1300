@@ -6,16 +6,16 @@ Rebecca Willi
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 | 18.08.2023| 0.0.1   | Kapitel 1&2 ausgefüllt und Arbeitspaket 8.A angefangen zu bearbeiten.|
-|       | ...     |                                                              |
+| 25.08.2023| 0.0.2   | Arbeitspakete 1.A, 2.A, 3.C, 5.A und 8.A bearbeitet und abgeschlossen                                                           |
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Ich programmiere einen Number-Guesser.
 
-✍️ Erklären Sie genauer in 50 bis 100 Wörtern, was genau Sie in diesem Projekt erreichen möchten, und was Sie dabei zu lernen hoffen.
+Bei diesem Projekt programmiere ich einen Number-Guesser. Der Computer wählt eine Zahl und hält diese geheim, so dass der User sie erraten muss. Es gibt verschiedene Levels, bei welchen der User selbst entscheiden kann, welches er spielt
 
 ### 1.2 User Stories
 
